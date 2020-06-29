@@ -11,8 +11,8 @@
   </li>
 </ul>
 <h2>Wyślij wiadomość</h2>
-<form action="{{ url_for('contact') }}">
-  <textarea id="sendEmail"></textarea>
+<form action="{{ url_for('contact') }}" method="POST">
+  <textarea id="sendEmail" name="sendEmail"></textarea>
   <input type="submit" value="Wyślij" />
 </form>
 {% endblock %}

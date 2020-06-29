@@ -9,8 +9,8 @@ def contact():
     if request.method == 'GET':
         return render_template("contact.html")
     elif request.method == 'POST':
-        print(request.form)
-        return render_template("contact.html")
+        print(request.form['sendEmail'])
+        return redirect("/contact")
 
 
 @app.route("/me")
