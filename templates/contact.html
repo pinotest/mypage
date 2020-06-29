@@ -1,0 +1,18 @@
+{% extends "parent.html" %} {% block content %}
+<h2>Kontakt</h2>
+<ul>
+  <li>
+    <strong>email:</strong>
+    stefan.burczymucha@gmail.com
+  </li>
+  <li>
+    <strong>telefon:</strong>
+    +69 700 777 777
+  </li>
+</ul>
+<h2>Wyślij wiadomość</h2>
+<form action="{{ url_for('me') }}">
+  <textarea id="sendEmail"></textarea>
+  <input type="submit" value="Wyślij" />
+</form>
+{% endblock %}
